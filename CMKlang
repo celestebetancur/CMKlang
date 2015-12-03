@@ -57,7 +57,7 @@ files = ""
 
 for i,j in enumerate(tokens):
     if j in samples:
-        head = "Samples d%i => gate;\n" %i
+        head = "Sampler d%i => gate;\n" %i
         text = "d%i.file(\"%s\");\n" %(i,j)
         files = files + text
         header = header + head
