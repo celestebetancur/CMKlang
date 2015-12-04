@@ -2,10 +2,10 @@
 
 Gain gate => dac;
 
-Samples d0 => gate;
-Samples d1 => gate;
-Samples d2 => gate;
-Samples d4 => gate;
+Sampler d0 => gate;
+Sampler d1 => gate;
+Sampler d2 => gate;
+Sampler d4 => gate;
 
 d0.file("bd");
 d1.file("rave");
