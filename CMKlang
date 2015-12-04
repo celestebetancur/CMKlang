@@ -28,8 +28,8 @@ samples = ["ab","ade","ades2","ades3","ades4","alex","alphabet","amencutup",
            "trump","ul","ulgab","uxay","voodoo","wind","wobble","world","xmas","yeah"]
 
 assign = ["|","=","\n",":","\t"]
-on = ["-","_","~","1","on"]
-off = [" ","0","off"]
+on = ["-","_","~","1","x"]
+off = [" ","0"]
 
 tokens = []
 sound = ""
@@ -90,5 +90,7 @@ for i,j in enumerate(tokens):
 
 textW.write("\nday => now;")
     
-textW.close()            
+textW.close()
+
+
 
