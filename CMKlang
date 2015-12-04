@@ -57,6 +57,10 @@ header = ""
 files = ""
 
 for i,j in enumerate(tokens):
+    if j == "clean":
+        with open("CMKbridge","w"):
+            tokens.pop(i)
+            pass       
     if j in samples:
         head = "Sampler d%i => gate;\n" %i
         text = "d%i.file(\"%s\");\n" %(i,j)
